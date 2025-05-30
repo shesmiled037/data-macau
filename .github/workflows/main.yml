@@ -2,11 +2,7 @@ name: Auto Post Macau Result
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # 13:00 WIB
-    - cron: '0 9 * * *'   # 16:00 WIB
-    - cron: '0 12 * * *'  # 19:00 WIB
-    - cron: '0 15 * * *'  # 22:00 WIB
-    - cron: '0 17 * * *'  # 00:00 WIB
+    - cron: '0 * * * *'   # Setiap 1 jam (UTC)
   workflow_dispatch:
 
 jobs:
