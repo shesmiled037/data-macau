@@ -15,7 +15,7 @@ def ambil_tabel_macau():
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
-            page.goto("http://146.190.92.226/", timeout=30000, wait_until="domcontentloaded")
+            page.goto("http://206.189.86.19/", timeout=30000, wait_until="domcontentloaded")
             page.wait_for_selector("table.baru", timeout=10000)
             html = page.content()
             browser.close()
